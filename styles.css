@@ -54,8 +54,9 @@ button {
                 transform 150ms ease;
     */
     display: inline-block;
-    border: none;
-    
+    border: 0px;
+    border-radius: 2px;
+
     -webkit-appearance: none;
     -moz-appearance: none;
 }
