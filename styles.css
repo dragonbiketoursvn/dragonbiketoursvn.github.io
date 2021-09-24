@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 25fr;
   padding: 0px;
   margin: 0px;
+  height: 100%;
 }
 
 .hours {
