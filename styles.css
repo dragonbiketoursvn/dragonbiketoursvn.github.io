@@ -14,7 +14,7 @@
   "topUpper topUpper"
   "topLower topLower"
   "left right";
-  grid-template-columns: 9fr 1fr;
+  grid-template-columns: 1fr 9fr;
   grid-template-rows: 1fr 1fr 8fr;
 }
 
