@@ -28,14 +28,14 @@ table {
   border-top: 1px solid #cfd1d4;
   border-left: 1px solid #cfd1d4;
   border-right: 1px solid #cfd1d4;
-  border_bottom: 1px dashed #cfd1d4;
+  border-bottom: 1px dashed #cfd1d4;
 }
 
 .even td {
   border-top: 1px dashed #cfd1d4;
   border-left: 1px solid #cfd1d4;
   border-right: 1px solid #cfd1d4;
-  border_bottom: 1px dashed #cfd1d4;
+  border-bottom: 1px dashed #cfd1d4;
 }
 
 button {
