@@ -59,6 +59,9 @@
 table {
   border: 0px solid #cfd1d4;
   border-collapse: collapse;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .odd td {
