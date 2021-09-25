@@ -10,3 +10,35 @@
   width: 100vw;
   background: tomato;
 }
+
+.topUpper {
+  margin: 0px;
+  padding: 0px;
+  height: 10vh;
+  width: 100vw;
+  background: yellow;
+}
+
+.topLower {
+  margin: 0px;
+  padding: 0px;
+  height: 10vh;
+  width: 100vw;
+  background: rebeccapurple;
+}
+
+.left {
+  margin: 0px;
+  padding: 0px;
+  height: 80vh;
+  width: 5vw;
+  background: hotpink;
+}
+
+.topLower {
+  margin: 0px;
+  padding: 0px;
+  height: 80vh;
+  width: 95vw;
+  background: green;
+}
