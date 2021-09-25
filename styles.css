@@ -37,6 +37,16 @@
   padding: 0px;
   grid-area: left;
   background: hotpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 75%;
+}
+
+.left p {
+  margin-top: 0%;
 }
 
 .right {
@@ -44,4 +54,23 @@
   padding: 0px;
   grid-area: right;
   background: green;
+}
+
+table {
+  border: 0px solid #cfd1d4;
+  border-collapse: collapse;
+}
+
+.odd td {
+  border-top: 1px solid #cfd1d4;
+  border-left: 1px solid #cfd1d4;
+  border-right: 1px solid #cfd1d4;
+  border_bottom: 1px dashed #cfd1d4;
+}
+
+.even td {
+  border-top: 1px dashed #cfd1d4;
+  border-left: 1px solid #cfd1d4;
+  border-right: 1px solid #cfd1d4;
+  border_bottom: 1px dashed #cfd1d4;
 }
