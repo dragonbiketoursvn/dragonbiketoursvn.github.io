@@ -9,36 +9,39 @@
   height: 100vh;
   width: 100vw;
   background: tomato;
+  display: grid;
+  grid-template-areas:
+  "topUpper topUpper"
+  "topLower topLower"
+  "left right";
+  grid-template-columns: 9fr 1fr;
+  grid-template-rows: 1fr 1fr 8fr;
 }
 
 .topUpper {
   margin: 0px;
   padding: 0px;
-  height: 10vh;
-  width: 100vw;
+  grid-area: topUpper;
   background: yellow;
 }
 
 .topLower {
   margin: 0px;
   padding: 0px;
-  height: 10vh;
-  width: 100vw;
+  grid-area: topLower;
   background: rebeccapurple;
 }
 
 .left {
   margin: 0px;
   padding: 0px;
-  height: 80vh;
-  width: 5vw;
+  grid-area: left;
   background: hotpink;
 }
 
-.topLower {
+.right {
   margin: 0px;
   padding: 0px;
-  height: 80vh;
-  width: 95vw;
+  grid-area: right;
   background: green;
 }
