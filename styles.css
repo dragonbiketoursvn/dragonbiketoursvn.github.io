@@ -1,79 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .body {
   margin: 0px;
   padding: 0px;
 }
 
 .container {
-  margin: 0px;
-  padding: 0px;
-  height: 100vh;
-  width: 100vw;
-  background: tomato;
   display: grid;
   grid-template-areas:
-  "topUpper topUpper"
-  "topLower topLower"
+  "top top"
   "left right";
   grid-template-columns: 1fr 9fr;
-  grid-template-rows: 1fr 1fr 8fr;
+  gap: 0px;
 }
 
-.topUpper {
-  margin: 0px;
-  padding: 0px;
-  grid-area: topUpper;
-  background: yellow;
-}
-
-.topLower {
-  margin: 0px;
-  padding: 0px;
-  grid-area: topLower;
-  background: rebeccapurple;
+.top {
+grid-area: top;
+height: 10vh;
+background-color: green;
 }
 
 .left {
-  margin: 0px;
-  padding: 0px;
   grid-area: left;
-  background: hotpink;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: right;
-  padding-right: 5px;
-  padding-top: 75%;
-}
-
-.left p {
-  margin-top: 0%;
+  height: 90vh;    
 }
 
 .right {
+  grid-area: right;
+  background-color: hotpink;  
+}
+
+.spacer {
+  height: 4.5vh;
+  border: black 1px solid;
+}
+
+.numberCell {
+  height: 9vh;
+  border: black 1px solid;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cellSolid {
+  height: 4.5vh;
+  border: black 1px solid;
+  border-bottom: none;
+  background: blue;
+}
+
+.cellDashed {
+  height: 4.5vh;
+  border: black 1px solid;
+  border-top: black 1px dashed;
+  border-bottom: none;
+}
+
+p {
   margin: 0px;
   padding: 0px;
-  grid-area: right;
-  background: green;
-}
-
-table {
-  border: 0px solid #cfd1d4;
-  border-collapse: collapse;
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.odd td {
-  border-top: 1px solid #cfd1d4;
-  border-left: 1px solid #cfd1d4;
-  border-right: 1px solid #cfd1d4;
-  border-bottom: 1px dashed #cfd1d4;
-}
-
-.even td {
-  border-top: 1px dashed #cfd1d4;
-  border-left: 1px solid #cfd1d4;
-  border-right: 1px solid #cfd1d4;
-  border-bottom: 1px dashed #cfd1d4;
+  text-align: right;
 }
