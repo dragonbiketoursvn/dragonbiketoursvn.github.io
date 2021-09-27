@@ -14,9 +14,9 @@ body {
 .container {
   display: grid;
   grid-template-areas:
-  "month month"
-  ". week"
-  "left right";
+  "month"
+  "week"
+  "right";
   grid-template-columns: 1fr 19fr;
   gap: 0px;  
 }
