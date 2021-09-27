@@ -6,7 +6,7 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+body {
   margin: 0px;
   padding: 0px;
 }
@@ -14,37 +14,49 @@ html {
 .container {
   display: grid;
   grid-template-areas:
-  "top top"
+  "month month"
+  ". week"
   "left right";
-  grid-template-columns: 1fr 9fr;
-  gap: 0px;
+  grid-template-columns: 1fr 19fr;
+  gap: 0px;  
 }
 
-.top {
-grid-area: top;
-height: 10vh;
-background-color: green;
+.month {
+  grid-area: month;
+  height: 10vh;
+  background: #edebeb;
+  padding-top: 1vw;
+  font-size: 5vw;
+  font-family: arial;
+  border-bottom: #bdb9b9 1px solid;
+}
+
+.week {
+  grid-area: week;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: white;
 }
 
 .left {
   grid-area: left;
-  height: 90vh;    
+  height: 90vh;
+  border-top: #969493 1px solid;
 }
 
 .right {
   grid-area: right;
-  background-color: hotpink;  
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: #969493 1px solid;
 }
 
 .spacer {
   height: 4.5vh;
-  border: black 1px solid;
 }
 
 .numberCell {
   height: 9vh;
-  border: black 1px solid;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,20 +64,77 @@ background-color: green;
 
 .cellSolid {
   height: 4.5vh;
-  border: black 1px solid;
+  border: #d3dbd5 1px solid;
   border-bottom: none;
-  background: blue;
+  border-right: none
 }
 
 .cellDashed {
   height: 4.5vh;
-  border: black 1px solid;
-  border-top: black 1px dashed;
+  border: #d3dbd5 1px solid;
+  border-top: #d3dbd5 1px dashed;
   border-bottom: none;
+  border-right: none
 }
 
 p {
   margin: 0px;
   padding: 0px;
+  padding-right: 2px;
   text-align: right;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #51f542;
+  background: #04c704;
+  color: #eef5eb;
+  height: 4vh;
+  font-size: 3vh;
+}
+
+.styled {
+  border: 0;
+  line-height: 0;
+  padding: 0 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+  background-color: rgba(0, 220, 0, 1);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+  background-color: rgba(0, 255, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.inactive {
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(140, 140, 140, 1);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.date {
+  padding-left: 2px;
+  font-family: arial;
 }
