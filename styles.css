@@ -8,8 +8,8 @@ html {
 
 body {
   margin: 0px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .container {
@@ -99,7 +99,7 @@ button {
 .styled {
   border: 0;
   line-height: 0;
-  padding: 0 px;
+  padding: 0 5px;
   font-size: 1rem;
   text-align: center;
   color: #fff;
