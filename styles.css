@@ -99,7 +99,7 @@ button {
 .styled {
   border: 0;
   line-height: 0;
-  padding: 0 10px;
+  padding: 0 px;
   font-size: 1rem;
   text-align: center;
   color: #fff;
