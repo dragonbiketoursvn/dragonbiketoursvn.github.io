@@ -40,7 +40,7 @@ body {
 }
 
 .year {
-  font-size: 30vh;
+  font-size: 30vh !important;
   color: tomato;
 }
 
