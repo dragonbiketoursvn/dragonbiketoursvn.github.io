@@ -39,6 +39,10 @@ body {
   font-family: inherit;
 }
 
+.year {
+  font-size: 3vh;
+}
+
 .week {
   grid-area: week;
   display: grid;
