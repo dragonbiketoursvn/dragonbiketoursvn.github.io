@@ -17,7 +17,7 @@ body {
   "month"
   "week"
   "right";
-  grid-template-columns: 1fr 19fr;
+  grid-template-columns: 1fr;
   gap: 0px;  
 }
 
