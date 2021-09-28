@@ -30,6 +30,7 @@ body {
   font-family: arial;
   border-bottom: #bdb9b9 1px solid;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
