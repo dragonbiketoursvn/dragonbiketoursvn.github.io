@@ -29,6 +29,8 @@ body {
   font-size: 5vw;
   font-family: arial;
   border-bottom: #bdb9b9 1px solid;
+  display: flex;
+  justify-content: center;
 }
 
 .week {
