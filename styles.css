@@ -26,11 +26,16 @@ body {
   height: 10vh;
   background: #edebeb;
   padding-top: 1vw;
-  font-size: 5vw;
+  font-size: 5vh;
   font-family: arial;
   border-bottom: #bdb9b9 1px solid;
   display: flex;
   justify-content: center;
+}
+
+.month span {
+  font-size: 8vh;
+  font-family: inherit;
 }
 
 .week {
