@@ -20,7 +20,6 @@
             background: none;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: repeat(5, 1fr);
             margin-top: 4%;
             margin-right: 2%;
             margin-left: 0%;
@@ -38,7 +37,7 @@
             font-family: inherit;
             color: inherit;
             background: linear-gradient(160deg, #333, #000000);;
-            border-radius: 10px;
+            border-radius: 0.4em;
             border: 1px solid white;
             padding-left: 10px;
         }
@@ -89,6 +88,20 @@
             height: auto;
             margin-left: 1%;
             box-shadow: 5px 5px 15px #333;
+        }
+
+        @media screen and (max-width:500px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+
+            .input-cell-long, .input-cell-full {
+                grid-column: 1;
+            }
+
+            .input-long {
+                width: 70%;
+            }
         }
 
     </style>
@@ -143,7 +156,7 @@
             <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
             <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
             <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
-            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="peni face">
+            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
         </div>
     </form>
 
