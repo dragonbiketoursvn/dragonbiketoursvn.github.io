@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Outline&family=Geo&family=Montserrat+Alternates:wght@100;400;700&family=Nova+Mono&family=Poppins:wght@500&family=Quantico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #444444;
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+
+        form {
+            background: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            margin-top: 4%;
+            margin-right: 2%;
+            margin-left: 0%;
+        }
+
+        label {
+            text-shadow: 0 0 1px white;
+            text-align: right;
+            padding-right: 7px;
+            flex-grow: 1;
+        }
+
+        input {
+            font-size: inherit;
+            font-family: inherit;
+            color: inherit;
+            background: linear-gradient(160deg, #333, #000000);;
+            border-radius: 10px;
+            border: 1px solid white;
+            padding-left: 10px;
+        }
+
+        input::selection {
+            background-color: none;
+            text-shadow: 0 1px 1px white;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 15px white;
+        }
+
+        .input-cell-short {
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: right;
+            margin-bottom: 10px;
+        }
+       
+        .input-cell-long {
+            /* background-color: orange; */
+            grid-column: 1/3;
+            display: flex;
+            justify-content: right;
+            margin-bottom: 10px;
+        }
+
+        .input-cell-full {
+            /* background-color: orange; */
+            grid-column: 1/4;
+            display: flex;
+            justify-content: right;
+            margin-bottom: 10px;
+        }
+
+        .input-short {
+            width: 70%;
+        }
+
+        .input-long {
+            width: 85%;
+        }
+
+        .gallery-image {
+            width: 22%; 
+            height: auto;
+            margin-left: 1%;
+            box-shadow: 5px 5px 15px #333;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="input-cell-short">
+            <label for="ward">Name</label>
+            <input class="input-short"type="ward" name="ward" id="ward">
+        </div>
+        <div class="input-cell-short">
+            <label for="district">Surname</label>
+            <input class="input-short"type="district" name="district" id="district">
+        </div>
+        <div class="input-cell-short">
+            <label for="penis">Nationality</label>
+            <input class="input-short" type="penis" name="penis" id="penis">
+        </div>
+        <div class="input-cell-short">
+            <label for="cock">Email</label>
+            <input class="input-short"type="cock" name="cock" id="cock">
+        </div>
+        <div class="input-cell-short">
+            <label for="cock">Phone</label>
+            <input class="input-short"type="cock" name="cock" id="cock">
+        </div>
+        <div class="input-cell-long">
+            <label for="balls">Building</label>
+            <input class="input-long" type="balls" name="balls" id="balls">
+        </div>
+        <div class="input-cell-short">
+        </div>
+        <div class="input-cell-short">
+            <label for="cock">Number</label>
+            <input class="input-short" type="cock" name="cock" id="cock">
+        </div>
+        <div class="input-cell-short">
+            <label for="cock">Street</label>
+            <input class="input-short" type="cock" name="cock" id="cock">
+        </div>
+        <div class="input-cell-short">
+        </div>
+        <div class="input-cell-short">
+            <label for="cock">Ward</label>
+            <input class="input-short" type="cock" name="cock" id="cock">
+        </div>
+        <div class="input-cell-short">
+            <label for="cock">District</label>
+            <input class="input-short" type="cock" name="cock" id="cock">
+        </div>
+        <div class="input-cell-full">
+            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
+            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
+            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
+            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
+        </div>
+    </form>
+
+</body>
+</html>
