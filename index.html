@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Outline&family=Geo&family=Montserrat+Alternates:wght@100;400;700&family=Nova+Mono&family=Poppins:wght@500&family=Quantico&display=swap" rel="stylesheet">
@@ -112,6 +113,32 @@
             opacity: 1;
         }
 
+        input[type="file"] {
+            display: none;
+        }
+
+        .input-mobile-photo {
+            height: 50%;
+            width: 99%;
+            font-size: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(160deg, #333, #000000);
+            border: 1px white solid;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgb(0, 0, 0, 1);
+            padding: 10%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .input-mobile-photo label {
+            font-size: 0.2em;
+        }
+
         @media screen and (max-width: 600px) {
             .desktop {
                 display: none;
@@ -129,11 +156,11 @@
 <body>
     <form class="desktop" action="" method="post">
         <div class="input-cell-short">
-            <label for="ward">Name / Tên</label>
+            <label for="ward">Name</label>
             <input class="input-short"type="ward" name="ward" id="ward">
         </div>
         <div class="input-cell-short">
-            <label for="district">Surname / Họ</label>
+            <label for="district">Surname</label>
             <input class="input-short"type="district" name="district" id="district">
         </div>
         <div class="input-cell-short">
@@ -211,12 +238,27 @@
         <div class="input-mobile">
             <input class="input-mobile" type="cock" name="cock" id="cock" placeholder="District">
         </div>
-        <div class="input-cell-full">
-            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
-            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
-            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
-            <img class="gallery-image" src="registration_cards/43F1-17237.JPG" alt="penis face">
+        <div class="input-mobile-photo">
+            <i class="fas fa-camera"></i>
+            <label class="input-photo" for="passport">Passport / Hộ Chiếu</label>
+            <input type="file" name="passport" id="passport">
         </div>
+        <div class="input-mobile-photo">
+            <i class="fas fa-camera"></i>
+            <label class="input-photo" for="passport">TRC / Visa</label>
+            <input type="file" name="passport" id="passport">
+        </div>
+        <div class="input-mobile-photo">
+            <i class="fas fa-camera"></i>
+            <label class="input-photo" for="passport">License / Bằng Lái</label>
+            <input type="file" name="passport" id="passport">
+        </div>
+        <div class="input-mobile-photo">
+            <i class="fas fa-camera"></i>
+            <label class="input-photo" for="passport">License (Back)</label>
+            <input type="file" name="passport" id="passport">
+        </div>
+       
     </form>
 
 </body>
