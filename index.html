@@ -5,145 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: #444444;
-        }
-
-        html {
-            box-sizing: border-box;
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: inherit;
-        }
-
-        #navbar {
-            position: relative;
-            display: flex;
-            width: 95%;
-            padding: 0px;
-            margin-bottom: 0px;
-        }
-
-        li {
-            list-style-type: none;
-            border: 1px white solid;
-            padding: 5px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom: none;
-            width: 50%;
-            position: relative;
-            /* margin-right: 2px; */
-        }
-
-        #item1 {
-            background: linear-gradient(160deg, #343434, #272727);
-            z-index: 3;
-            position: relative;
-        }
-
-        #item2 {
-            background: linear-gradient(160deg, #2c2c2c, #252525);
-            margin-left: 2px;
-            z-index: 1;
-            position: relative;
-        }
-
-        #two {
-            position: relative;
-            width: 95%;
-            height: 80vh;
-            background: linear-gradient(160deg, #333, #000000);
-            border: 1px white solid;
-            margin-top: -1px;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        li {
-            color: white;
-            padding-left: 10px;
-        }
-
-        section {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    <title>Space Invaders</title>
 </head>
 
 <body>
-
-    <ul id="navbar">
-        <li id="item1">one</li>
-        <li id="item2">two</li>
-    </ul>
-
-    <div id="two">
-        <section id="blah">
-            lorem ipso suck my dick
-            lorem ipso suck my dick
-            lorem ipso suck my dick
-            lorem ipso suck my dick
-            lorem ipso suck my dick
-            lorem ipso suck my dick
-            lorem ipso suck my dick
-        </section>
-
-        <section id="blahblah">
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-            <p>lorem ipso suck my cock</p>
-        </section>
+    <div style="text-align: center;">
+        <canvas width="510" height="680"></canvas>
     </div>
 </body>
-<script>
-    const tab1 = document.querySelector('#item1');
-    const tab2 = document.querySelector('#item2');
-    const content = document.querySelector('#two');
-    const blah = document.querySelector('#blah');
-    const blahblah = document.querySelector('#blahblah');
-    blahblah.style.display = 'none';
 
-
-    tab1.addEventListener('click', (evt) => {
-        let styles = getComputedStyle(evt.target);
-        let zIndex = styles.getPropertyValue('z-index');
-        if (zIndex == 1) {
-            evt.target.style.zIndex = 3;
-            tab2.style.zIndex = 1
-            blah.style.display = 'none';
-            blahblah.style.display = 'block';
-        }
-    });
-
-    tab2.addEventListener('click', (evt) => {
-        let styles = getComputedStyle(evt.target);
-        let zIndex = styles.getPropertyValue('z-index');
-
-        if (zIndex == 1) {
-            evt.target.style.zIndex = 3;
-            tab1.style.zIndex = 1;
-            blahblah.style.display = 'none';
-            blah.style.display = 'block';
-        }
-    });
-
-</script>
+<script src="js/space-invaders.js"></script>
 
 </html>
